@@ -11,9 +11,12 @@ function print(text) {
  * @param {string | null} name
  * @returns {boolean}
  */
+//здесь я не поняла, как связать между собой 2 функции isValid и sayHello
+// и как проверить работу этих функций вместе.
 function isValid(name) {
-  // ваш код...
+  let name = name !== " " && name.length >= 4 && name !== "" ? true : false;
 }
+isValid(name);
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
