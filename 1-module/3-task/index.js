@@ -3,11 +3,11 @@
  * @param {string} str
  * @returns {string}
  */
-let name = 'вася';
 
-function ucFirst (name) {
-	name = name[0].toUpperCase() + name.substring(1);
+function ucFirst(str) {
+  let firstLetter = str.charAt(0);
+  let firstLetterUpperCase = firstLetter.toUpperCase();
+  let otherLetters = str.slice(1);
+
+  return `${firstLetterUpperCase}${otherLetters}`;
 }
-
-ucFirst (name);
-

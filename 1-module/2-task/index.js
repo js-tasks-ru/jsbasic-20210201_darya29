@@ -11,10 +11,9 @@ function print(text) {
  * @param {string | null} name
  * @returns {boolean}
  */
-//здесь я не поняла, как связать между собой 2 функции isValid и sayHello
-// и как проверить работу этих функций вместе.
+
 function isValid(name) {
-  let name = name !== " " && name.length >= 4 && name !== "" ? true : false;
+  return !!name && !name.includes(' ') && name.length >= 4;
 }
 isValid(name);
 
