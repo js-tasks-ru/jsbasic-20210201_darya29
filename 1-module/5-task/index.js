@@ -6,14 +6,11 @@
  */
 
 let maxlength = '...';
-let str = 'abcde12abcde12abcde12abcde12abcde12abcde12';
+let str = 'abcde12abcde12abcde12abcde12abcde12abcd';
 
 function truncate(str, maxlength) {
-  if (str.length > 20) {
-    return (str.slice(0, -1) + maxlength);
-  } else {
-  return (str);
-  }
+  return (str.length > maxlength) ?
+    str.slice(0, maxlength - 1) + '…' : str;
 }
 
 

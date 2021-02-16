@@ -3,13 +3,11 @@
  * @param {Object} obj
  * @returns {Boolean}
  */
-let shedule={}
-let sheduleSize = Object.keys(shedule).length;
+let schedule = {}
 
-function isEmpty (obj) {
-	if (sheduleSize === 0) {
-		return true
-	} else {
-		return false
-	}
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
 }
